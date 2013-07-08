@@ -1,0 +1,40 @@
+<!-- [* $Id: xo_canvas.html 458 2010-11-21 15:37:23Z kris_fr $ *] -->
+<!-- Theme others parameters - file xo_thm_parameters.html -->
+	<{includeq file="$parameters_template"}>
+<!-- Metas, Titles, and Style Sheets -->
+	<{includeq file="$theme_name/xo_metas.html"}>
+<!-- Additionals Scripts -->
+	<{includeq file="$theme_name/xo_scripts.html"}>
+</head>
+<!--[if lt IE 7 ]> <body id="<{$xoops_dirname}>"  class="<{$xoops_langcode}> ie6"> <![endif]-->  
+<!--[if IE 7 ]>    <body id="<{$xoops_dirname}>"  class="<{$xoops_langcode}> ie7"> <![endif]-->  
+<!--[if IE 8 ]>    <body id="<{$xoops_dirname}>"  class="<{$xoops_langcode}> ie8"> <![endif]-->  
+<!--[if IE 9 ]>    <body id="<{$xoops_dirname}>"  class="<{$xoops_langcode}> ie9"> <![endif]-->  
+<!--[if (gt IE 9)|!(IE)]><!--> <body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>"> <!--<![endif]-->
+	<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
+	<{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
+	<{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>
+	<{/if}>
+	<div id="xo-wrapper">
+		<div id="xo-bgstatic"></div>
+		<div id="xo-canvas">
+			<!-- Include Header -->
+			<{if $theme_view_header}>
+				<div id="xo-header">
+				<{if $theme_view_logobanner}><{includeq file="$theme_name/xo_header.html"}><{/if}>
+				<{if $theme_view_globalnav}><{includeq file="$theme_name/xo_globalnav.html"}><{/if}>
+				</div>
+			<{/if}>
+			<!-- include Homepage box (see comments in file xo_homepage.html -->
+			<{if $theme_view_homepage}><{includeq file="$theme_name/xo_homepage.html"}><{/if}>	
+			<!-- Include Content Columns -->
+			<{includeq file="$theme_name/xo_page.html"}>
+			<!-- Include Footer -->
+			<{if $theme_view_footer}><{includeq file="$theme_name/xo_footer.html"}><{/if}> 
+		</div><!-- End xo-canvas -->
+		<!--{xo-logger-output}-->	
+	</div><!-- End xo-wrapper -->
+	<!-- INCLUDE BARADMIN - xo_footerstatic.html -->
+	<{if $xoops_isadmin && $theme_view_baradmin}><{includeq file="$theme_name/xo_footerstatic.html"}><{/if}>
+</body>
+</html>

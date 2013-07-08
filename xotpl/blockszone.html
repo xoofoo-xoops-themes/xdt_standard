@@ -1,0 +1,17 @@
+<!-- [* $Id: blockszone.html 287 2010-05-28 12:46:51Z kris_fr $ *] -->
+<{if $blocks}>
+    <<{$zoneTag}> <{if $zoneId}> id="<{$zoneId}>"<{/if}> class="xo-blockszone <{if $zoneClass}> <{$zoneClass}><{/if}>">
+        <{foreach from=$blocks item=block}>
+            <div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block <{$block.module}>">
+                <{if $block.title}>
+			<div class="xo-blocktitle">
+				<{$block.title}>
+				<{if $theme_admin_block}><{includeq file="$theme_name/xo_blockadmin.html"}><{/if}>
+				<{if $theme_viewall_block && $block.module !='system' && $block.module !=''}><{includeq file="$theme_name/xo_viewall.html"}><{/if}>
+			</div>
+		<{/if}>
+                <div class="xo-blockcontent"><{$block.content}></div>
+            </div>
+        <{/foreach}>
+    </<{$zoneTag}>>
+<{/if}>

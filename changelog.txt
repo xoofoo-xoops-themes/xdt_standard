@@ -1,0 +1,102 @@
+Xdt Standard Theme Template - Changelog
+
+Documentation on line --> http://dev.xoofoo.org/Xdt_Standard/
+Videos on line --> http://tv.xoofoo.org
+
+============================
+Version 1.2 ( for xoops 2.5.x )
+============================
+- remove extras.css - now in xoops.css (kris_fr)
+- remove system blocks override - now in system module (kris_fr)
+- change jQuery call (kris_fr)
+- change xoops.css call (kris_fr)
+- update xo_footerstatic.html for xoops 2.5.x (kris_fr)
+- cleaning code for xoops 2.5.x (kris_fr)
+- add new class in body tag for IE fix (kris_fr)
+- add in meta : apple-touch-icon (kris_fr)
+- add new meta X-UA-Compatible with edge/chrome (kris_fr)
+- add new meta "viewport" for mobile (kris_fr)
+
+============================
+Version 1.1 Beta ( for xoops 2.4.x )
+============================
+- rename blockfooter.css in footer.css - with css footer (kris_fr)
+- fix word-wrap in xoopsCode and xoopsQuote (kris_fr)
+
+============================
+Version 1.1 Beta ( for xoops 2.4.x )
+============================
+- add dev.css (kris_fr)
+- add tplsystem.css (kris_fr)
+- add fonts.css (kris_fr)
+- add globalnav.css (kris_fr)
+- complete extras.css (kris_fr)
+- change architecture for xo_canvas.html (kris_fr)
+		* add xo_header.html
+		* add xo_globalnav.html
+		* add xo_footer.html
+- add override for system module (kris_fr)
+		* system_block_login.html
+		* system_block_mainmenu.html
+		* system_block_search.html
+		* system_block_user.html
+		* system_redirect.html
+		* system_siteclosed.html
+- add new parameters in xo_thm_parameters.html (kris_fr)
+- add 5 news smarty tags for use in this theme
+		* <{$canvas_template}>  for --> themes/themename/xotpl/xo_canvas.html or themes/themename/modules/modulename/xo_canvas.html if this file is overriding
+		* <{$parameters_template}>  for --> themes/themename/xotpl/xo_thm_parameters.html or themes/themename/modules/modulename/xo_thm_parameters.html if this file is overriding
+		* <{$xoops_themeurl}>  for -->  urldusite/themes/themename
+		* <{$xoops_module_theme}> for -->  themename/modules/namemodule
+		* <{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/
+- add morpho.js (kris_fr)
+- add xo_blockadmin.html and images (kris_fr and Mariane)
+- add xo_breadscrumb.html (kris_fr)
+- add xo_homepage.html (kris_fr)
+- add homepage.css (kris_fr)
+- add xo_blockfooter.html (kris_fr)
+- add blockfooter.css (kris_fr)
+- add xo_uptop.html (kris_fr)
+- add xo_viewall.html (kris_fr)
+- add smarty plugin function.block.php in extras folder (kris_fr and Trabis)
+- add smarty plugin function.xoMemberInfo.php in extras folder (kris_fr and Dugris)
+- add more xo_page.html (columns display) in "extras" (kris_fr) :
+		* xo_page.html.Clcr		: content and below, left column - center column (without content) - right column
+		* xo_page.html.clr		: center column - leftt column - right column
+		* xo_page.html.crl		: center column - right column - left column
+		* xo_page.html.Crlc		: content and below, right column - left column - center column (without content)
+		* xo_page.html.lcr		: left column - center column - right column (standard xo_page.html)
+		* xo_page.html.lcrBc	: left column - center column (without bottom block) - right colum, and below, center bottom block
+		* xo_page.html.lrc		: left column - right column - center column
+		* xo_page.html.rlc		: right column - left column - center column
+		* xo_page.html.Tclcr	: top center block and below, left column - center column (without top block) - right column
+		* xo_page.html.lCcr		: left column - content, and below, center column (without content) - right column
+		* xo_page.html.crb		: center column - right column, and below, left column (horizontal)
+		* xo_page.html.lcb		: left column - center column, and below, right colum (horizontal)
+		* xo_page.html.tcr		: left column (horizontal), and below, center column - right column
+		* xo_page.html.tlc		: right column (horizontal), and below, left column - center column
+- add info.txt in "extras" folder (kris_fr)
+- complete with description the readme.txt in "docs" folder (kris_fr)
+- complete with description the info.txt in "xotpl" folder (kris_fr)
+- complete with description the info.txt in "extras" folder (kris_fr)
+
+- add new possibility for override xo_thm_parameter.html file (kris_fr)
+
+- change logo.png
+- update baradmin for Xoops 2.5.x (kris_fr)
+- update and complete language files - french & english (kris_fr)
+
+- fix bug with xoopsCode class (kris_fr)
+- fix box-shadow for xo_homepage.html in firefox & Safari (kris_fr)
+- fix blocks position for xo-lcrpageblocks (kris_fr)
+- fix link for favicon.png in xo_metas.html (kris_fr)
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- complete rewrite of the code and style (kris_fr)
+
+============================
+Version 0.2.1
+============================
+- Neolithic (mdr / lol / kris_fr)
